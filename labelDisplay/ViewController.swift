@@ -30,12 +30,14 @@ class ViewController: UIViewController {
         
         if sender.tag == 1 {
             if var tmp = label1.text{
+                
                 label1.text = tmp + display
                 //append string into a array
                 storeDisplay1.append(tmp)
                 //print(storeDisplay1)
             }
         } else if sender.tag == 2{
+            //removing last item from an array and displaying in label
             label1.text = storeDisplay1.popLast()
         }
     }
@@ -52,6 +54,7 @@ class ViewController: UIViewController {
             }
 
         } else if sender.tag == 4{
+        //removing last item from an array and displaying in label
             label2.text = storeDisplay2.popLast()
             
         }
